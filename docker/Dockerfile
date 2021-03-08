@@ -29,6 +29,7 @@ LABEL maintainer="me@tcardonne.fr" \
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     apt-get install -y \
+        wget flex bison qemu-system-x86 cpio pcregrep procps libelf-dev \
         curl \
         unzip \
         apt-transport-https \
